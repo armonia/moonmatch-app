@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 pt-[72px]">
@@ -5,17 +7,17 @@ export default function Home() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-8">
-              <a href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+              <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
                 MoonMatch
-              </a>
+              </Link>
             </div>
             <div className="flex items-center gap-4">
-              <a href="/login" className="hidden md:inline-block px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 hover:border-blue-600 transition-all duration-300">
+              <Link href="/login" className="hidden md:inline-block px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 hover:border-blue-600 transition-all duration-300">
                 Login
-              </a>
-              <a href="/register" className="px-6 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 transform hover:scale-105">
+              </Link>
+              <Link href="/register" className="px-6 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 transform hover:scale-105">
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -39,12 +41,12 @@ export default function Home() {
               MoonMatch uses AI to connect innovative startups with established SMEs, fostering collaborations that drive mutual growth and success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
+              <Link
                 href="/register"
                 className="px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all duration-300 transform hover:scale-105"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
           {/* Planets section */}
@@ -211,12 +213,12 @@ export default function Home() {
           <div className="absolute inset-0 bg-grid-white/10 animate-grid"></div>
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
           <p className="text-lg mb-8 opacity-90">Join MoonMatch today and discover your perfect business match.</p>
-          <a
+          <Link
             href="/register"
             className="inline-block px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-colors"
           >
             Start now
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -225,9 +227,9 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 dark:text-gray-400">© 2025 Moonstone Fund. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="/privacy" className="text-gray-600 dark:text-gray-400 hover:text-blue-600">Privacy</a>
-            <a href="/terms" className="text-gray-600 dark:text-gray-400 hover:text-blue-600">Terms</a>
-            <a href="/contact" className="text-gray-600 dark:text-gray-400 hover:text-blue-600">Contact</a>
+            <Link href="/privacy" className="text-gray-600 dark:text-gray-400 hover:text-blue-600">Privacy</Link>
+            <Link href="/terms" className="text-gray-600 dark:text-gray-400 hover:text-blue-600">Terms</Link>
+            <Link href="/contact" className="text-gray-600 dark:text-gray-400 hover:text-blue-600">Contact</Link>
           </div>
         </div>
       </footer>

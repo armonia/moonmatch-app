@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { MessageCircle, Calendar, Clock, CheckCircle2, XCircle, AlertCircle } from "lucide-react"
+import { MessageCircle, Clock } from "lucide-react"
 
 const MOCK_INTERACTIONS = [
   {

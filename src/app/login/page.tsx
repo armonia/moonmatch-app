@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { LoginForm } from "@/components/auth/login-form"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Login | MoonMatch",
@@ -13,13 +14,13 @@ export default function LoginPage() {
       <div className="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-600 to-purple-600" />
         <div className="relative z-20 flex items-center text-lg font-medium">
-          <a href="/" className="text-2xl font-bold">MoonMatch</a>
+          <Link href="/" className="text-2xl font-bold">MoonMatch</Link>
         </div>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              "MoonMatch has revolutionized how we connect with innovative startups, 
-              leading to multiple successful collaborations."
+              &ldquo;MoonMatch has revolutionized how we connect with innovative startups, 
+              leading to multiple successful collaborations.&rdquo;
             </p>
             <footer className="text-sm">Sofia Chen, CEO of TechGrowth Solutions</footer>
           </blockquote>

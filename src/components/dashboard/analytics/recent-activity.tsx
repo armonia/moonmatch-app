@@ -48,7 +48,7 @@ const MOCK_ACTIVITIES: Activity[] = [
   },
 ]
 
-const EXTENDED_ACTIVITIES = [
+const EXTENDED_ACTIVITIES: Activity[] = [
   ...MOCK_ACTIVITIES,
   {
     id: 6,

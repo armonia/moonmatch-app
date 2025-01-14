@@ -18,9 +18,7 @@ import {
 } from "@/components/ui/select"
 import { Industry, SMEProfile } from "@/types/profiles"
 
-// Define the available startup stages
 const STARTUP_STAGES = ["Seed", "Series A", "Series B", "Growth", "Scale-up"] as const
-type StartupStage = typeof STARTUP_STAGES[number]
 
 export function SMEProfileView({ smeId }: { smeId?: number }) {
   const [profile, setProfile] = useState<SMEProfile>(() => {

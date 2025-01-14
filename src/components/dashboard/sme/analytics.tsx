@@ -1,7 +1,6 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { BarChart as BarChartIcon, LineChart as LineChartIcon, PieChart as PieChartIcon, Activity } from "lucide-react"
 import { ResponsiveContainer, LineChart, BarChart, XAxis, YAxis, Tooltip, Line, Pie, Bar } from "recharts"

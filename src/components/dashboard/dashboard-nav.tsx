@@ -127,7 +127,7 @@ export function DashboardNav({ type }: DashboardNavProps) {
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[80%] max-w-[300px] p-6">
+            <SheetContent side="left" className="w-[80%] max-w-[300px] p-6" title="Navigation Menu">
               <div className="flex flex-col h-full">
                 <div className="font-semibold mb-4">
                   {type === "startup" ? "Startup Dashboard" : "SME Dashboard"}

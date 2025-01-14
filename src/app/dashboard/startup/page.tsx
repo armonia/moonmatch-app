@@ -20,7 +20,7 @@ export default function StartupDashboard() {
         <Card className="col-span-2">
           <CardHeader>
             <CardTitle>Profile Overview</CardTitle>
-            <CardDescription>Manage your startup's profile and key information</CardDescription>
+            <CardDescription>Manage your startup&apos;s profile and key information</CardDescription>
           </CardHeader>
           <CardContent>
             <StartupProfile />

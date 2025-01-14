@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Search, Filter, MapPin, Building, X } from "lucide-react"
+import { Search, Filter, MapPin, Building } from "lucide-react"
 import Link from "next/link"
 import {
   Sheet,
@@ -122,7 +122,8 @@ export function MatchExplorer() {
     maxFunding: null,
     minTeamSize: null,
   })
-  const [isFiltersOpen, setIsFiltersOpen] = useState(false)
+  
+  // const [isFiltersOpen, setIsFiltersOpen] = useState(false)
 
   useEffect(() => {
     // Apply filters and search
@@ -231,7 +232,7 @@ export function MatchExplorer() {
               )}
             </Button>
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent title="Filters">
             <SheetHeader>
               <SheetTitle className="flex justify-between items-center">
                 Filters

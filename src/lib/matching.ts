@@ -11,7 +11,7 @@ export function calculateMatchScore(
   const industryFit = calculateIndustryFit(startup, sme)
   const technologyFit = calculateTechnologyFit(startup, sme)
   const stageFit = calculateStageFit(startup, sme)
-  const locationFit = calculateLocationFit(startup, sme, preferences.locationRadius)
+  const locationFit = calculateLocationFit(startup, sme) //, preferences.locationRadius
   const requirementsFit = calculateRequirementsFit(startup, sme)
 
   // Apply preference weights
@@ -93,7 +93,7 @@ function calculateStageFit(startup: StartupProfile, sme: SMEProfile): number {
 function calculateLocationFit(
   startup: StartupProfile,
   sme: SMEProfile,
-  radiusKm: number
+  // radiusKm: number
 ): number {
   // Simplified location matching - in real app, use geocoding and distance calculation
   if (startup.location === sme.location) {
@@ -104,6 +104,9 @@ function calculateLocationFit(
   const startupCountry = startup.location.split(", ")[1]
   const smeCountry = sme.location.split(", ")[1]
 
+  // For now, using simplified logic until geocoding is implemented
+  // If in same country but different city, use a medium score
+  // In a real implementation, we would calculate actual distance and compare with radiusKm
   return startupCountry === smeCountry ? 70 : 40
 }
 

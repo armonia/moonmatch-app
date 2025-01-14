@@ -12,7 +12,7 @@ export default function SMEProfilePage() {
       <div>
         <h1 className="text-3xl font-bold">Company Profile</h1>
         <p className="text-gray-500">
-          Manage your SME's profile and preferences for startup matching
+          Manage your SME&apos;s profile and preferences for startup matching
         </p>
       </div>
 

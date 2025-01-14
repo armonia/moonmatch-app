@@ -12,7 +12,7 @@ export default function StartupProfilePage() {
       <div>
         <h1 className="text-3xl font-bold">Company Profile</h1>
         <p className="text-gray-500">
-          Manage your startup's profile and information visible to potential SME partners
+          Manage your startup&apos;s profile and information visible to potential SME partners
         </p>
       </div>
 

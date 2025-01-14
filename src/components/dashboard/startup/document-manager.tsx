@@ -159,7 +159,7 @@ function formatDate(date: string) {
 export function DocumentManager() {
   const [documents, setDocuments] = useState<Document[]>([])
   const [expandedDocId, setExpandedDocId] = useState<number | null>(null)
-  const [selectedDocId, setSelectedDocId] = useState<number | null>(null)
+  const [selectedDocId] = useState<number | null>(null)
 
   useEffect(() => {
     setDocuments(MOCK_DOCUMENTS)
@@ -169,7 +169,7 @@ export function DocumentManager() {
     setDocuments(documents.filter(doc => doc.id !== id))
   }
 
-  const getDocumentIcon = (type: Document["type"]) => {
+  const getDocumentIcon = () => {
     return <FileText className="h-8 w-8 text-blue-600" />
   }
 
@@ -233,7 +233,7 @@ export function DocumentManager() {
                 }`}>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      {getDocumentIcon(doc.type)}
+                      {getDocumentIcon()}
                       <div>
                         <p className="font-medium">{doc.name}</p>
                         <div className="flex items-center gap-2 mt-1">

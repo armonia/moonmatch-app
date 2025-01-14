@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { RegisterForm } from "@/components/auth/register-form"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Register | MoonMatch",
@@ -14,13 +15,13 @@ export default function RegisterPage() {
       <div className="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-600 to-purple-600" />
         <div className="relative z-20 flex items-center text-lg font-medium">
-          <a href="/" className="text-2xl font-bold">MoonMatch</a>
+          <Link href="/" className="text-2xl font-bold">MoonMatch</Link>
         </div>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              "Join our growing community of innovators and established businesses, 
-              where collaboration drives success."
+              &ldquo;Join our growing community of innovators and established businesses, 
+              where collaboration drives success.&rdquo;
             </p>
           </blockquote>
         </div>
