@@ -6,8 +6,8 @@ type Props = {
   params: { type: "startup" | "sme" }
 }
 
-export const metadata = ({ params }: Props): Metadata => ({
-  title: `Messages | ${params.type.toUpperCase()} Dashboard`,
+export const metadata = (): Metadata => ({
+  title: `Messages | Dashboard`,
   description: "Chat with your matches",
 })
 
