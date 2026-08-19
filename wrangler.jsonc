@@ -1,0 +1,11 @@
+{
+  // Worker Cloudflare per moonmatch-app (Next.js via OpenNext)
+  "name": "moonmatch-app",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  }
+}
